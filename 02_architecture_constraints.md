@@ -4,13 +4,13 @@
 
 El desarrollo de SalonFlow ERP estará sujeto a las siguientes restricciones tecnológicas:
 
-- El sistema será desarrollado como una aplicación web responsive.
 - El frontend utilizará React con TypeScript.
-- El backend será desarrollado con Node.js y Express.
+- El backend será desarrollado con C# utilizando ASP.NET Core (versión 8.0 o superior).
 - La base de datos será PostgreSQL.
-- El acceso a la base de datos se realizará mediante Prisma ORM.
-- La autenticación se implementará mediante JSON Web Token (JWT).
-- Las contraseñas serán almacenadas utilizando bcrypt.
+- El acceso a la base de datos se realizará mediante Entity Framework Core (EF Core).
+- La autenticación se implementará mediante JWT (JSON Web Token) usando IdentityCore.
+- Las contraseñas serán almacenadas utilizando Identity's built-in password hashing.
+- La comunicación entre cliente y servidor será mediante API REST con HTTPS.
 
 ---
 
