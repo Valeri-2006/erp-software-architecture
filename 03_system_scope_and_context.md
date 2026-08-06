@@ -53,11 +53,12 @@ El sistema podrá integrarse en el futuro con WhatsApp Business y correo electr�
 
 # Contexto Técnico
 
-SalonFlow ERP implementa una arquitectura cliente-servidor basada en una aplicación web.
+SalonFlow ERP implementa una arquitectura cliente-servidor de tres capas basada en tecnologías modernas y accesibles.
 
-El usuario accede mediante un navegador web, el cual consume una API REST desarrollada en Node.js y Express.
+El usuario accede mediante un navegador web a una aplicación React desarrollada en TypeScript. Esta aplicación se comunica con un backend construido en C# usando ASP.NET Core, que expone una API REST segura mediante HTTPS. Toda la información es almacenada en una base de datos PostgreSQL utilizando Entity Framework Core para el acceso a datos.
 
-Toda la información es almacenada en una base de datos PostgreSQL utilizando Prisma ORM.
+La arquitectura sigue principios de Clean Architecture y CQRS para mantener el código organizado, escalable y fácil de mantener durante el desarrollo académico y futuras ampliaciones.
+
 
 ### Diagrama de Contenedores (C4 Nivel 2)
 
