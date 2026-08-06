@@ -61,7 +61,8 @@ Toda la información es almacenada en una base de datos PostgreSQL utilizando Pr
 
 ### Diagrama de Contenedores (C4 Nivel 2)
 
-> <img width="334" height="522" alt="image" src="https://github.com/user-attachments/assets/b2d2489d-7dc3-4a1b-89a5-47595ceeed6a" />
+<img width="521" height="1026" alt="image" src="https://github.com/user-attachments/assets/500e6737-9c82-47c9-86e7-12f21bb98fe9" />
+
 
 
 ![Diagrama de Contenedores](images/c2_container.png)
