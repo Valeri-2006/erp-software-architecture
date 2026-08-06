@@ -14,12 +14,11 @@ El desarrollo de SalonFlow ERP estará sujeto a las siguientes restricciones tec
 
 ---
 
-## Restricciones de Infraestructura
-
-- El sistema será desplegado utilizando plataformas cloud gratuitas para el proyecto académico.
-- El frontend será desplegado en Vercel.
-- El backend será desplegado en Railway.
-- La base de datos PostgreSQL será alojada en Railway.
+### Restricciones de Infraestructura
+- **API Backend:** Azure App Service (free tier) o Render.com
+- **Base de Datos:** Azure Database for PostgreSQL (free tier) o Railway
+- **Frontend:** Vercel (gratis)
+- **CI/CD:** GitHub Actions (gratis)
 
 ---
 
