@@ -6,7 +6,8 @@ SalonFlow ERP está diseñado bajo una arquitectura por capas, donde cada módul
 
 ### Diagrama General de Bloques
 
-> **Inserte aquí el diagrama de componentes o de bloques**
+> <img width="1576" height="861" alt="image" src="https://github.com/user-attachments/assets/98e99ded-abb0-4dda-9236-c04e9bd54826" />
+
 
 ![Vista de Bloques](images/building_blocks.png)
 
