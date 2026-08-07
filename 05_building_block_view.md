@@ -22,37 +22,60 @@ Esta organización facilita el mantenimiento del software, la reutilización del
 
 ---
 
-## Bloques de Construcción
+# Bloques de Construcción Principales
 
-SalonFlow ERP está compuesto por los siguientes módulos:
+## Capa de Presentación – Controladores API REST
 
-- Gestión de Usuarios
-- Gestión de Agenda
-- Gestión de Clientes
-- Gestión de Servicios
-- Gestión de Comisiones
-- Gestión de Inventario
-- Reportes y Dashboard
-- Configuración
+**Responsabilidad:** Recibir solicitudes HTTP y coordinar las respuestas.
+
+**Componentes:**
+- `Controlador de Autenticación` → Inicio/cierre de sesión, registro de usuarios
+- `Controlador de Citas` → Crear, editar, cancelar citas
+- `Controlador de Clientes` → Registrar y gestionar clientes
+- `Controlador de Inventario` → Controlar productos y stock
+- `Controlador de Comisiones` → Consultar comisiones calculadas
+- `Controlador de Reportes` → Generar reportes y dashboard
+
+**Características:**
+- Valida autenticación mediante sesión (cookie HTTP)
+- Valida autorización según rol del usuario
+- Delega lógica de negocio a los Servicios
+- Retorna respuestas en formato JSON
+
+---
+
+## Capa de Aplicación – Servicios
+
+**Responsabilidad:** Implementar la lógica de negocio y validaciones.
+
+**Componentes:**
+- `Servicio de Autenticación` → Gestiona login, logout y creación de sesión
+- `Servicio de Citas` → Valida citas y evita conflictos de horario
+- `Servicio de Clientes` → Gestiona datos e historial de clientes
+- `Servicio de Inventario` → Descuenta stock y genera alertas
+- `Servicio de Comisiones` → Calcula comisiones automáticamente (30%)
+- `Servicio de Reportes` → Genera reportes consolidados
+
+**Características:**
+- Contienen las reglas de negocio del sistema
+- No acceden directamente a la BD (usan Repositorios)
+- Realizan validaciones antes de persistir datos
+- Pueden usar otros servicios si es necesario
+
+**Ejemplo:** `Servicio de Comisiones` calcula automáticamente: `Precio × 30% = Comisión`
 
 ---
 
-## Interfaces Importantes
+## Capa de Datos – Repositorios
 
-Los módulos interactúan mediante los servicios implementados en la API REST.
+**Responsabilidad:** Abstraer el acceso a datos usando Entity Framework Core.
 
-Las principales interfaces son:
-
-- API de autenticación
-- API de usuarios
-- API de clientes
-- API de agenda
-- API de inventario
-- API de servicios
-- API de comisiones
-- API de reportes
-
----
+**Componentes:**
+- `Repositorio de Usuarios` → Acceso a usuarios
+- `Repositorio de Citas` → Acceso a citas
+- `Repositorio de Clientes` → Acceso a clientes
+- `Repositorio de Inventario` → Acceso a productos
+- `Repositorio de Comisiones` → Acceso a comisiones
 
 # Nivel 2
 
