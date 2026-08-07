@@ -13,7 +13,6 @@ El objetivo es centralizar procesos operativos de pequeñas peluquerías y barbe
 - [Alcance y Contexto del Sistema](docs/03_system_scope_and_context.md)  
 - [Vista de Bloques](docs/05_building_block_view.md)  
 - [Vista de Ejecución](docs/06_runtime_view.md)  
-- [Vista de Despliegue](docs/07_deployment_view.md)  
 - [Glosario](docs/10_glossary.md)
 
 ---
