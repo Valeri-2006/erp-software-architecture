@@ -20,7 +20,6 @@ Como sistemas externos se consideran:
 
 ### Diagrama de Contexto (C4 Nivel 1)
 
-><img width="726" height="312" alt="image" src="https://github.com/user-attachments/assets/f6791dc4-76a2-40d3-837b-3077985f32a8" />
 
 
 ![Diagrama de Contexto](images/c1_context.png)
