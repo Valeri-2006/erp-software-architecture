@@ -22,6 +22,8 @@ Como sistemas externos se consideran:
 
 
 
+<img width="726" height="312" alt="image" src="https://github.com/user-attachments/assets/c3d742af-318b-4efa-ac0f-ba7cb72cf6f7" />
+
 ![Diagrama de Contexto](images/c1_context.png)
 
 ---
